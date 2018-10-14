@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:textColor="@color/text">
+
+    <EditText
+        android:id="@+id/amountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="@color/text"
+        android:textSize="45dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="357dp"
+        android:background="#afafaf"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/Countries1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginVertical="30dp"
+            android:textColor="@android:color/black" />
+
+        <Spinner
+            android:id="@+id/Countries2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginVertical="30dp"
+            android:textColor="@android:color/background_dark" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:contentDescription="@string/todo"
+            android:onClick="convertButton"
+            app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
